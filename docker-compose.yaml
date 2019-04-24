@@ -8,6 +8,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./docker-build:/app/build:rw
+      - ./docker-build:/tmp/build:rw
     ports:
       - '3001:80'
