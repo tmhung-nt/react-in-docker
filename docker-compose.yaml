@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+
+  docker-react:
+    container_name: docker-react
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./docker-build:/app/build:rw
+    ports:
+      - '3001:80'
